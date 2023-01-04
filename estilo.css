@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00318B;
+}
+
+.cabecalho__logo {
+    font-size: 1.5em;
+    color: #f9f9f9;
+    padding: 1em 0 1em 1em;
+}
+
+.cabecalho__menu-lista {
+    display: flex;
+    margin-right: 2em;
+}
+
+.menu__item {
+    margin: 0 1em;
+}
+
+.menu__link {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+.sugestoes {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+.sugestoes__titulo {
+    font-size: 2em;
+    color: #00318B;
+    font-weight: 700;
+}
+
+.sugestoes__texto {
+    margin: 2em 0 2em 3em;
+    line-height: 21px;
+    width: 90%;
+    text-align: left;
+}
+
+.sugestoes__botao
+ {
+    display: block;
+    margin-top: 2em;
+    width: 107%;
+    border: none;
+    background-color: #00318B;
+    padding: 10px;
+    color: #f9f9f9;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 5px;
+}
+.sugestoes__botao:hover {
+    background-color: #1d52b6;
+}
+
+.sugestoes__area {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rodape {
+    background-color: #dadada;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape__texto {
+    text-align: center;
+    padding: 1em;
+    color: #00318B;
+}
