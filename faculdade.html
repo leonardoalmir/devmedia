@@ -8,17 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="faculdade.css">
-    <title>CyberExpress - Caixa de sugestões</title>
+    <title>Formulários - Matrícula</title>
 </head>
 <body>
     <header class="cabecalho">
-        <h1 class="cabecalho__logo">Faculdade</h1>
+        <h1 class="cabecalho__logo">Formulários</h1>
         <div class="cabecalho__menu">
             <ul class="cabecalho__menu-lista">
                 <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Sobre</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Contato</a></li>
                 <li class="menu__item"><a href="index.html" class="menu__link">CyberExpress</a></li>
+                <li class="menu__item"><a href="questionario.html" class="menu__link">Questionário</a></li>
+                <li class="menu__item"><a href="faculdade.html" class="menu__link">Faculdade</a></li>
             </ul>
         </div>
     </header>
@@ -30,19 +30,28 @@
             </p>
             <form action="https://www.devmedia.com.br/codigos/formularios/aula3/" method="get">
                 <label>Nome: </label>
-                <input type="text" name="nome"/>
+                <input type="text" minlength="3" maxlength="80" name="nome" placeholder="Digite seu nome completo" />
                 <label>Data de Nascimento: </label>
-                <input type="date" name="data_nascimento"/>
+                <input type="date" min="1990-01-01" max="2020-01-30" name="data_nascimento"/>
                 <label>Email:</label>
-                <input type="email" name="email" />
+                <input type="email" minlength="7" maxlength="120" name="email" placeholder="exemplo@email.com" />
                 <label>Telefone:</label>
-                <input type="tel" name="telefone" />
+                <input type="tel" minlength="16" maxlength="32" name="telefone" placeholder="(XX) XXXXX-XXXX"/>
                 <label>Melhor dia para vencimento:</label>
-                <input type="number" name="dia_vencimento" />
+                <input type="number" min="10" max="20"  name="dia_vencimento" placeholder="Valores entre 10 a 20" />
                 <label>Login:</label>
-                <input type="text" name="login" />
+                <input type="text" name="login" placeholder="Digite seu login" />
                 <label>Senha:</label>
-                <input type="password" name="senha" />
+                <input type="password" minlength="4" maxlength="8" name="senha" placeholder="Digite sua senha"/>
+                <label for="">Quais seus esportes favoritos?</label>
+                <div class="check__esportes">
+                    <input class="check" type="checkbox" name="esportes[]" value="futebol" id="futebol">
+                    <label class="check__label" for="futebol">Futebol</label>
+                    <input class="check" type="checkbox" name="esportes[]" value="volei" id="volei">
+                    <label class="check__label" for="volei">Vôlei</label>
+                    <input class="check" type="checkbox" name="esportes[]" value="basquete" id="basquete">
+                    <label class="check__label" for="basquete">Basquete</label>
+                </div>
                 <button class="sugestoes__botao" type="submit">Enviar sugestão</button>
             </form>
         </section>

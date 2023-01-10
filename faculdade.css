@@ -1,20 +1,27 @@
+:root {
+    --cor-principal: #8b0000;
+    --cor-secundaria: #b61d1d;
+    --branco: #f9f9f9;
+    --cinza-rodape: #dadada;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    background-color: #f9f9f9;
+    background-color: var(--branco);
 }
 
 .cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #8b0000;
+    background-color: var(--cor-principal);
 }
 
 .cabecalho__logo {
     font-size: 1.5em;
-    color: #f9f9f9;
+    color: var(--branco);
     padding: 1em 0 1em 1em;
 }
 
@@ -28,7 +35,7 @@ body {
 }
 
 .menu__link {
-    color: #f9f9f9;
+    color: var(--branco);
     text-decoration: none;
 }
 
@@ -47,7 +54,7 @@ main {
 
 .sugestoes__titulo {
     font-size: 2em;
-    color: #8b0000;
+    color: var(--cor-principal);
     font-weight: 700;
 }
 
@@ -76,9 +83,9 @@ input {
     margin-top: 2em;
     width: 100%;
     border: none;
-    background-color: #8b0000;
+    background-color: var(--cor-principal);
     padding: 10px;
-    color: #f9f9f9;
+    color: var(--branco);
     font-size: 16px;
     cursor: pointer;
     transition: 0.5s;
@@ -86,7 +93,7 @@ input {
     border-radius: 5px;
 }
 .sugestoes__botao:hover {
-    background-color: #b61d1d;
+    background-color: var(--cor-secundaria);
 }
 
 .sugestoes__area {
@@ -97,7 +104,7 @@ input {
 }
 
 .rodape {
-    background-color: #dadada;
+    background-color: var(--cinza-rodape);
     /* position: absolute; */
     bottom: 0;
     width: 100%;
@@ -106,5 +113,14 @@ input {
 .rodape__texto {
     text-align: center;
     padding: 1em;
-    color: #8b0000;
+    color: var(--cor-principal);
+}
+
+.check__esportes {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    margin: 0 5px 0 8px;
 }
